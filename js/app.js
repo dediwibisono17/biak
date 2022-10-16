@@ -3,6 +3,12 @@ $(".youtube__img").click(() => {
   $(".youtube__real").css("display", "block");
 });
 
+$(document).ready(()=>{
+  AOS.init({
+    duration: 1200,
+})
+})
+
 $(".slider-hero").slick({
   dots: true,
   infinite: true,
