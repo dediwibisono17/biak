@@ -255,6 +255,9 @@ main {
 .hero {
   margin-top: 56px;
   padding: 0;
+  @media screen and (max-width:766px) {
+    margin-top: 16px;
+  }
   .slick-slide {
     margin: 0;
   }
@@ -1465,8 +1468,33 @@ main {
 footer {
   background: linear-gradient(180deg, #164d85 -65%, #010035 110%);
   padding: 32px;
+  margin: 0;
 }
 
+.comingsoon {
+  padding: 0;
+  position: relative;
+  .text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    h1 {
+      color: white;
+      font-size: 56px;
+      text-shadow: 2px 2px black;
+    }
+  }
+  .image {
+    width: 100%;
+    height: 100vh;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
 
 #paket {
   .banner{
